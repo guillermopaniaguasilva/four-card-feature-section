@@ -20,6 +20,25 @@ export const Container = styled.div<ContainerProps>`
   &:first-of-type {
     margin-top: 76px;
   }
+
+  @media only screen and (min-width: 600px) {
+    &:nth-of-type(2) {
+      margin-top: 64px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    &:nth-of-type(3) {
+      position: absolute;
+      left: 341px;
+      top: 287px;
+      margin-top: 30px;
+    }
+    &:nth-of-type(1),
+    &:nth-of-type(4) {
+      margin-top: 175px;
+    }
+  }
 `;
 
 export const Heading = styled.p`

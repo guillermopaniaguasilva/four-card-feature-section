@@ -1,4 +1,4 @@
-import { Heading, Description, Bold } from './styles';
+import { Heading, Description, Bold, Container } from './styles';
 import Feature, { FeatureType } from '../Feature/Feature';
 
 type FeaturesProps = {
@@ -14,15 +14,17 @@ const Features = ({ features }: FeaturesProps) => {
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successul.
       </Description>
-      {features.map(({ heading, description, icon, accentColor }, index) => (
-        <Feature
-          key={index}
-          heading={heading}
-          description={description}
-          icon={icon}
-          accentColor={accentColor}
-        />
-      ))}
+      <Container>
+        {features.map(({ heading, description, icon, accentColor }, index) => (
+          <Feature
+            key={index}
+            heading={heading}
+            description={description}
+            icon={icon}
+            accentColor={accentColor}
+          />
+        ))}
+      </Container>
     </>
   );
 };

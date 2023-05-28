@@ -25,3 +25,11 @@ export const Description = styled.p`
   margin: 16px 32px 0 32px;
   text-align: center;
 `;
+
+export const Container = styled.div`
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+`;
